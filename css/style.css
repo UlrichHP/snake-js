@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#game {
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 10%;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+#home {
+    width: 400px;
+    height: 400px;
+    background-image: url('../img/snake-start.png');
+    margin: 0 auto;
+    box-shadow: 0 0 5px black;
+}
+
+#start {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#first {
+    display: block;
+}
+#retry {
+    display: none;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    bottom: 0;
+    height: 30px;
+    font-size: 1em;
+    width: 90px;
+    margin: auto 0;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+button:disabled {
+    background-color: grey;
+}
+
+p {
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+#score {
+    width: 400px;
+    margin: 10px auto;
+    text-align: center;
+    display: none;
+    color: white;
+}
